@@ -1,138 +1,112 @@
-.mail {
-    color: #B85A22;
+@page {
+    size: A4;
+    margin: 15mm 18mm;
+    background-color: #ffffff;
 }
 
-.cv-indent {
-    margin-left: 32px;
+* {
+    box-sizing: border-box;
 }
 
-.cv-wrapper {
-    width: 100vw;
-    min-height: 100vh;
-    background: #a6a2a2;
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222222;
+    line-height: 1.45;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
 }
 
-.cv-sidebar {
-    background: #a6a2a2;
-    width: 270px;
-    min-height: 100vh;
-    font-size: 0.95rem;
-    border-right: 2px solid #bdbdbd;
+/* Header */
+header {
+    border-bottom: 2px solid #2b3a4a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.sidebar-title {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-    padding-top: 45px !important;
-}
-
-.sidebar-info {
-    font-size: 0.92rem;
-    line-height: 1.7;
-}
-
-.sidebar-label {
-    font-family: "Aptos", sans-serif;
-    font-weight: bold;
+h1 {
+    font-size: 20pt;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+    color: #1a2530;
     letter-spacing: 0.5px;
 }
 
-.cv-main {
-    background: #fff;
-    min-height: 100vh;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-    padding-top: 35px !important;
-    padding-bottom: 25px !important;
-}
-
-.cv-name {
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    font-size: 45px;
-}
-
-.cv-subtitle {
-    font-size: 1.3rem;
-    color: #444;
-    margin-bottom: 1.2em;
-}
-
-.cv-section {
-    margin-bottom: 2.2em;
-}
-
-.cv-section-title {
-    font-size: 1.65rem;
-    font-weight: normal;
-    margin-bottom: 1em;
-    letter-spacing: 0.5px;
-}
-
-.cv-degree {
-    font-size: 0.98rem;
-    margin-bottom: 1.2em;
-}
-
-.cv-job {
-    font-size: 0.95rem;
-    margin-bottom: 1.2em;
-}
-
-.cv-job ul {
-    margin-top: 0.5em;
-    margin-bottom: 0;
-}
-
-.cv-skill-group {
-    margin-bottom: 1em;
-}
-
-.cv-skill-group ul {
-    margin-top: 0.3em;
-    margin-bottom: 0;
-}
-
-/* Links */
-a {
-    font-size: 13px;
+.subtitle {
+    font-size: 11pt;
     font-weight: bold;
-    color: #6d4b17;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.contact-info {
+    font-size: 9pt;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: #1a2530;
     text-decoration: underline;
 }
 
-a:hover {
-    color: #2c35e0;
+/* Secciones */
+section {
+    margin-bottom: 14px;
 }
 
-/* Ajustes para la impresión */
+h2 {
+    font-size: 11pt;
+    text-transform: uppercase;
+    color: #1a2530;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 3px;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+}
 
-@media print {
-    body {
-        background: #a6a2a2 !important;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-        /* Puedes ajustar el tamaño aquí si lo deseas, pero lo ideal es cambiarlo en body y las clases principales */
-    }
+/* Elementos de contenido */
+p {
+    margin: 0 0 6px 0;
+}
 
-    .cv-wrapper {
-        background: #a6a2a2 !important;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
+.job-title {
+    font-weight: bold;
+    font-size: 10pt;
+    color: #0f172a;
+}
 
-    .cv-sidebar {
-        background: #a6a2a2 !important;
-        color: #000 !important;
-        border-right: 2px solid #bdbdbd !important;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
+.job-date {
+    float: right;
+    font-weight: normal;
+    color: #64748b;
+    font-size: 9pt;
+}
 
-    .cv-main {
-        background: #fff !important;
-        color: #000 !important;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
+.job-company {
+    font-style: italic;
+    color: #334155;
+    margin-bottom: 4px;
+}
+
+ul {
+    margin: 4px 0 8px 18px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+.skills-grid {
+    margin-bottom: 6px;
+}
+
+.skills-group {
+    margin-bottom: 4px;
+}
+
+.skills-label {
+    font-weight: bold;
+    color: #1e293b;
 }
